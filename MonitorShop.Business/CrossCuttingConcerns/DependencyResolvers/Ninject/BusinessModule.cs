@@ -1,6 +1,7 @@
 ﻿using MonitorShop.Business.Abstract;
 using MonitorShop.Business.Concrete;
 using MonitorShop.DataAccess.Abstract;
+using MonitorShop.DataAccess.Concrete.AdoNet;
 using MonitorShop.DataAccess.Concrete.EntityFramework;
 using Ninject.Modules;
 using System;
