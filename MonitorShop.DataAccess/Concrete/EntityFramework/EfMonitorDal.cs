@@ -8,6 +8,5 @@ namespace MonitorShop.DataAccess.Concrete.EntityFramework
 {
     public class EfMonitorDal:EfRepositoryBase<Monitor,MonitorShopContext>,IMonitorDal
     {
-
     }
 }

@@ -5,8 +5,7 @@ using System.Text;
 
 namespace MonitorShop.DataAccess.Abstract
 {
-    public interface IMonitorDal:IEntityRepository<Monitor>
+    public interface IMonitorDal : IEntityRepository<Monitor>
     {
-
     }
 }

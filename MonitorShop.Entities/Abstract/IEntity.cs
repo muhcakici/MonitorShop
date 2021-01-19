@@ -6,6 +6,5 @@ namespace MonitorShop.Entities.Abstract
 {
     public interface IEntity
     {
-
     }
 }

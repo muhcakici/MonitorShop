@@ -9,13 +9,12 @@ namespace MonitorShop.Entities.Concrete
     public class Monitor : IEntity
     {
         [Key]
-        public int MonitiorId { get; set; }
+        public int Id { get; set; }
         public string Model { get; set; }
         public int Stock { get; set; }
         public decimal UnitPrice { get; set; }
         public Monitor()
         {
-
         }
         public Monitor(string model, int stock, decimal unitPrice)
         {
@@ -25,7 +24,7 @@ namespace MonitorShop.Entities.Concrete
         }
         public override string ToString()
         {
-            return $"{MonitiorId,-5} {Model,-30} {Stock,-20} {UnitPrice,-20}";
+            return $"{Id,-5} {Model,-30} {Stock,-20} {UnitPrice,-20}";
         }
     }
 }
