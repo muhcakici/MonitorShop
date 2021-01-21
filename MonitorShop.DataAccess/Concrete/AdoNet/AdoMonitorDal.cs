@@ -20,7 +20,7 @@ namespace MonitorShop.DataAccess.Concrete.AdoNet
                 cmd.Parameters.AddWithValue("UnitPrice", entity.UnitPrice);
                 VTYS.SqlExecuteNonQuery(cmd);  
             }
-            Console.WriteLine("Monitor Added.");
+            Console.WriteLine("Monitor Added With AdoNet.");
         }
         public void Delete(Monitor entity)
         {
@@ -30,7 +30,7 @@ namespace MonitorShop.DataAccess.Concrete.AdoNet
                 cmd.Parameters.AddWithValue("Id", entity.Id);
                 VTYS.SqlExecuteNonQuery(cmd);      
             }
-            Console.WriteLine("Monitor Deleted.");
+            Console.WriteLine("Monitor Deleted With AdoNet.");
         }
         public Monitor Get(Expression<Func<Monitor, bool>> filter)
         {
@@ -66,7 +66,7 @@ namespace MonitorShop.DataAccess.Concrete.AdoNet
                 cmd.Parameters.AddWithValue("UnitPrice", entity.UnitPrice);
                 VTYS.SqlExecuteNonQuery(cmd);
             }
-            Console.WriteLine("Monitor Updated.");
+            Console.WriteLine("Monitor Updated With AdoNet.");
         }
     }
 }

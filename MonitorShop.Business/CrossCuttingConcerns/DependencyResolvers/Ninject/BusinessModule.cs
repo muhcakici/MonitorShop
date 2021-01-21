@@ -15,7 +15,10 @@ namespace MonitorShop.Business.CrossCuttingConcerns.DependencyResolvers.Ninject
         public override void Load()
         {
             Bind<IMonitorService>().To<MonitorManager>().InSingletonScope();
-            Bind<IMonitorDal>().To<EfMonitorDal>().InSingletonScope();
+            Bind<IMonitorDal>().To<AdoMonitorDal>().InSingletonScope();
+
+            Bind<IPostService>().To<PostManager>().InSingletonScope();
+            Bind<IPostDal>().To<AdoPostDal>().InSingletonScope();
         }
     }
 }

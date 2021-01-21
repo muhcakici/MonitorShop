@@ -13,5 +13,6 @@ namespace MonitorShop.DataAccess.Concrete.EntityFramework
             optionsBuilder.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=MonitorShopDB;Integrated Security=True");
         }
         public DbSet<Monitor> Monitors { get; set; }
+        public DbSet<Post> Posts { get; set; }
     }
 }
